@@ -42,7 +42,7 @@ route.put('/:id', validatePagina, async (req, res) => {
     }
 
     const updatePagina = connection.execute(`UPDATE paginas
-    SET numero_pagina = ?, imag = ? , id_capitulo = ? WHERE id = ?`, [numero_pagina, img, id_capitulo, id])
+    SET numero_pagina = ?, img = ? , id_capitulo = ? WHERE id = ?`, [numero_pagina, img, id_capitulo, id])
 
     const newPagina = {
         id,

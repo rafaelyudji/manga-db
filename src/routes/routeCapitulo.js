@@ -27,7 +27,7 @@ route.post('/', validateCapitulo, async (req, res) => {
     res.status(201).json(newCapitulo);
 });
 
-route.put('/:id',validateCapitulo, async (req, res) => {
+route.put('/:id', validateCapitulo, async (req, res) => {
     const { nome_capitulo, numero_capitulo, id_manga } = req.body;
     const { id } = req.params;
 
